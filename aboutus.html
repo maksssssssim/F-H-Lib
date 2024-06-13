@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styleAboutUs.css">
+    <link rel="stylesheet" href="./css/LogRegStyle.css">
+    <title>О нас</title>
+</head>
+<body>
+    <header class="header">
+        <div class="left_side">
+            <div class="humburger_menu">
+                <span class="humburger_menu_close">
+                    <img src="./components/Group 63.svg" alt="humburger_menu">
+                </span>
+                <span class="humburger_menu_open disactive">
+                    <img src="./components/Group 64.svg" alt="humburger_menu">
+                </span>
+            </div>
+            <div class="logo"><a href="./index.html">F&H Lib</a></div>
+        </div>
+        <div class="right_side" id="buttons">
+            <button class="login_btn">Log In</button>
+            <button class="reg_btn">Registration</button>
+        </div>
+        <div class="right_side disactive" id="account">
+            <img src="./components/person_account.svg" alt="">
+            <p class="user_name"></p>
+        </div>
+    </header>
+    <div class="wrapper">
+        <span class="close"><img src="./components/close.svg" alt="close"></span>
+
+        <div class="form-box login">
+            <h2>Авторизация</h2>
+            <p class="alert" id="LogAlert"></p>
+            <form class="loginForm" action="#">
+                <div class="input-box">
+                    <input type="email" id="LogEmail" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" id="LogPassword" required>
+                    <label>Пароль</label>
+                </div>
+                <div class="remember-forgot">
+                    <a href="#">Забыли пароль?</a>
+                </div>
+                <button type="submit" class="btn" id="login">Войти</button>
+                <div class="login-register">
+                    <p>Еще нет аккаунта?<a href="#" class="register-link">Зарегистрируйтесь</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box register">
+            <h2>Регистрация</h2>
+            <p class="alert" id="RegAlert"></p>
+            <form class="registerForm" action="#">
+                <div class="input-box">
+                    <input type="text" id="RegName" required>
+                    <label>Имя пользователя</label>
+                </div>
+                <div class="input-box">
+                    <input type="email" id="RegEmail" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" id="RegPassword" required>
+                    <label>Пароль</label>
+                </div>
+                <button type="submit" class="btn" id="register">Зарегистрироваться</button>
+                <div class="login-register">
+                    <p>Уже есть аккаунт?<a href="#" class="login-link">Войти</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <main>
+        <aside class="aside">
+            <div class="menu_part">
+                <span>
+                    <img src="./components/Vector.svg" alt="">
+                </span>
+                <span class="disactive"><a href="./index.html">Главная</a></span>
+            </div>
+            <div class="menu_part">
+                <span>
+                    <img src="./components/Vector.svg" alt="">
+                </span>
+                <span class="disactive"><a href="./aboutgame.html">Об игре</a></span>
+            </div>
+            <div class="menu_part">
+                <span>
+                    <img src="./components/Vector.svg" alt="">
+                </span>
+                <span class="disactive"><a href="./characters.html">Персонажи</a></span>
+            </div>
+            <div class="menu_part">
+                <span>
+                    <img src="./components/Vector.svg" alt="">
+                </span>
+                <span class="disactive"><a href="./items.html">Предметы</a></span>
+            </div>
+            <div class="menu_part">
+                <span>
+                    <img src="./components/Vector.svg" alt="">
+                </span>
+                <span class="disactive"><a href="./fight.html">Система боя</a></span>
+            </div>
+            <div class="menu_part">
+                <span>
+                    <img src="./components/Vector.svg" alt="">
+                </span>
+                <span class="disactive"><a href="./guide.html">Гайд</a></span>
+            </div>
+            <div class="menu_part">
+                <span>
+                    <img src="./components/Vector.svg" alt="">
+                </span>
+                <span class="disactive"><a href="./forum.html">Обсуждение</a></span>
+            </div>
+            <div class="menu_part">
+                <span>
+                    <img src="./components/Vector.svg" alt="">
+                </span>
+                <span class="disactive"><a href="./aboutus.html">О нас</a></span>
+            </div>
+        </aside>
+        <div class="main_conteiner">
+            <div class="main_text">
+                <div class="main_text__header">
+                    <p>Я/Мы - создатели</p>
+                </div>
+                <div class="main_text__menu">
+                    <p>Мы - команда инициативных студентов НИУ ВШЭ, исследователи видеоигр и их нарративов и просто большие фанаты серии игр Fear & Hunger</p>
+                    <p>Данный проект это не просто продукт нашей курсовой работы, но и, как нам кажется, важный вклад в развитие и популяризацию нашей любимой игры в российском сегменте</p>
+                </div>
+            </div>
+            <div class="about_us">
+                <div class="about_us__container" id="left">
+                    <div class="about_us__text">
+                        <p id="name">Женя</p>
+                        <div class="social_medias">
+                            <a href="#"><img src="./components/vk_icon.svg" alt="VKontakte"></a>
+                            <a href="#"><img src="./components/telegram_icon.svg" alt="Telegram"></a>
+                            <a href="#"><img src="./components/email_icon.svg" alt="Email"></a>
+                        </div>
+                        <p id="text">Какой-то текст</p>
+                    </div>
+                    <img class="main_img" src="" alt="">
+                </div>
+                <div class="about_us__container">
+                    <img class="main_img" src="" alt="">
+                    <div class="about_us__text">
+                        <p id="name">Макс</p>
+                        <div class="social_medias">
+                            <a href="#"><img src="./components/vk_icon.svg" alt="VKontakte"></a>
+                            <a href="#"><img src="./components/telegram_icon.svg" alt="Telegram"></a>
+                            <a href="#"><img src="./components/email_icon.svg" alt="Email"></a>
+                        </div>
+                        <p id="text">Какой-то текст 2</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <p>Создано при поддержке руководителя Фомина Ильи Владимировича, мам, пап, литров кофе и убитых нервов</p>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="./scripts/script.js"></script>
+<script src="./scripts/LogRegScript.js"></script>
+
+</html>

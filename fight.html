@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styleGuide.css">
+    <link rel="stylesheet" href="./css/LogRegStyle.css">
+    <title>Система боя и механики</title>
+</head>
+<body>
+    <header class="header">
+        <div class="left_side">
+            <div class="humburger_menu">
+                <span class="humburger_menu_close">
+                    <img src="./components/Group 63.svg" alt="humburger_menu">
+                </span>
+                <span class="humburger_menu_open disactive">
+                    <img src="./components/Group 64.svg" alt="humburger_menu">
+                </span>
+            </div>
+            <div class="logo"><a href="./index.html">F&H Lib</a></div>
+        </div>
+        <div class="right_side" id="buttons">
+            <button class="login_btn">Log In</button>
+            <button class="reg_btn">Registration</button>
+        </div>
+        <div class="right_side disactive" id="account">
+            <img src="./components/person_account.svg" alt="">
+            <p class="user_name"></p>
+        </div>
+    </header>
+    <div class="wrapper">
+        <span class="close"><img src="./components/close.svg" alt="close"></span>
+
+        <div class="form-box login">
+            <h2>Авторизация</h2>
+            <p class="alert" id="LogAlert"></p>
+            <form class="loginForm" action="#">
+                <div class="input-box">
+                    <input type="email" id="LogEmail" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" id="LogPassword" required>
+                    <label>Пароль</label>
+                </div>
+                <div class="remember-forgot">
+                    <a href="#">Забыли пароль?</a>
+                </div>
+                <button type="submit" class="btn" id="login">Войти</button>
+                <div class="login-register">
+                    <p>Еще нет аккаунта?<a href="#" class="register-link">Зарегистрируйтесь</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box register">
+            <h2>Регистрация</h2>
+            <p class="alert" id="RegAlert"></p>
+            <form class="registerForm" action="#">
+                <div class="input-box">
+                    <input type="text" id="RegName" required>
+                    <label>Имя пользователя</label>
+                </div>
+                <div class="input-box">
+                    <input type="email" id="RegEmail" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" id="RegPassword" required>
+                    <label>Пароль</label>
+                </div>
+                <button type="submit" class="btn" id="register">Зарегистрироваться</button>
+                <div class="login-register">
+                    <p>Уже есть аккаунт?<a href="#" class="login-link">Войти</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <main>
+        <aside class="aside">
+            <div class="menu_part">
+                <span>
+                    <img src="./components/Vector.svg" alt="">
+                </span>
+                <span class="disactive"><a href="./index.html">Главная</a></span>
+            </div>
+            <div class="menu_part">
+                <span>
+                    <img src="./components/Vector.svg" alt="">
+                </span>
+                <span class="disactive"><a href="./aboutgame.html">Об игре</a></span>
+            </div>
+            <div class="menu_part">
+                <span>
+                    <img src="./components/Vector.svg" alt="">
+                </span>
+                <span class="disactive"><a href="./characters.html">Персонажи</a></span>
+            </div>
+            <div class="menu_part">
+                <span>
+                    <img src="./components/Vector.svg" alt="">
+                </span>
+                <span class="disactive"><a href="./items.html">Предметы</a></span>
+            </div>
+            <div class="menu_part">
+                <span>
+                    <img src="./components/Vector.svg" alt="">
+                </span>
+                <span class="disactive"><a href="./fight.html">Система боя</a></span>
+            </div>
+            <div class="menu_part">
+                <span>
+                    <img src="./components/Vector.svg" alt="">
+                </span>
+                <span class="disactive"><a href="./guide.html">Гайд</a></span>
+            </div>
+            <div class="menu_part">
+                <span>
+                    <img src="./components/Vector.svg" alt="">
+                </span>
+                <span class="disactive"><a href="./forum.html">Обсуждение</a></span>
+            </div>
+            <div class="menu_part">
+                <span>
+                    <img src="./components/Vector.svg" alt="">
+                </span>
+                <span class="disactive"><a href="./aboutus.html">О нас</a></span>
+            </div>
+        </aside>
+        <div class="main_conteiner">
+            <div class="main_header">
+                <div class="main_header__banner">
+                    <p class="h1_text">Боевая система и механики</p>
+                    <img class="banner" src="./components/banner_fight.jpg" alt="banner">
+                    <p>Fear & Hunger по своим механикам, как боевым, так и исследовательским, сильно отличается от большинства игр, сделанных на RPG Maker. В данном разделе будут описаны данные отличия, а также даны некоторые советы по игровому процессу</p>
+                </div>
+                <div class="main_menu">
+                    <p class="h2_text">Меню</p>
+                    <ul>
+                        <li><a href="#body_part">Части тела</a></li>
+                        <li><a href="#attackes">Приоритетные атаки</a></li>
+                        <li><a href="#exp">Опыт и добыча</a></li>
+                        <li><a href="#effects">Статусные эффекты</a></li>
+                        <li><a href="#coin">Подбрасывание монетки</a></li>
+                        <li><a href="#fears">Страхи</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main_conteiner__conteiner">
+                <div class="main_conteiner__content" id="body_part">
+                    <p class="h2_text">Части тела</p>
+                    <p>Все персонажи в игре, будь-то игровые или враги, “сегментированы” - то есть их тело внутри игры состоит из нескольких частей. Во время боя можно нацеливаться на каждую часть, что добавляет определенный элемент тактики</p>
+                    <p>Каждая часть тела врага имеет свое количество HP, о чем подробнее вы можете узнать в статье о конкретном враге. Когда показатель части тела достигает 0, то если это конечность, она оказывается отсечена и враг не может использовать ее в бою, а если это голова или торс, то враг погибает</p>
+                    <div class="attention">
+                        <span>
+                            <img src="./components/important.svg" alt="">
+                        </span>
+                        <div class="attention__text">
+                            <p id="main">Восстановить утерянные конечности можно вступив в Союз Плоти или заключив сделку с Леди Луны в обмен на Девочку</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_conteiner__content" id="attackes">
+                    <p class="h2_text">Приоритетные атаки</p>
+                    <p>Несмотря на то, что наносить урон можно по всем частям тела противника, некоторые из них будут недоступны до момента, пока вы не избавитесь от других. Так, попасть в голову часто нельзя, если предварительно не уничтожить ноги врага</p>
+                    <p>Помимо этого важно отсекать атакующие конечности, так как после этого враг чаще всего не способен нанести вам урона</p>
+                    <p>Подробнее изучить стратегии битвы с каждым врагом можно в статьях, посвященных им</p>
+                    <div class="attention">
+                        <span>
+                            <img src="./components/important.svg" alt="">
+                        </span>
+                        <div class="attention__text">
+                            <p id="main">Заманивайте сильных врагов в капканы, чтобы ослабить их, лишив ног, и в разы облегчить себе их устранение</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_conteiner__content" id="exp">
+                    <p class="h2_text">Опыт и добыча</p>
+                    <p>Опыта в игре нет, а единственное, что вы можете получить с врага - добыча в разных ее видах и непосредственное устранение врага как опасности для своей команды. При этом добыча выпадает далеко не со всех противников и чаще выгоднее убежать от них, нежели вступать в бой</p>
+                    <p>Вместо опыта в игре есть души, которые с помощью камня душ можно собрать с большинства врагов. В дальнейшем души могут пригодиться для получения новых навыков, заклинаний или наложения проклятий на оружие на Хексене</p>
+                </div>
+                <div class="main_conteiner__content" id="effects">
+                    <p class="h2_text">Статусные эффекты</p>
+                    <p>Статусные эффекты – вероятно одна из самых неприятных для игрока механик, что может серьезно усложнить прохождение. Статусные эффекты накладывают враги, некоторая еда и окружение, например, гвозди в досках, на который вы можете неудачно наступить. Так что нужно всегда быть начеку, иначе можно потерять часы прогресса</p>
+                    <p>Подробнее о статусных эффектах написано в одноименной статье</p>
+                </div>
+                <div class="main_conteiner__content" id="coin">
+                    <p class="h2_text">Подбрасывание монетки</p>
+                    <p>Во время боя многие враги применяют атаки, в которых задействуется подбрасывание монетки. В этот момент вы обязаны выбрать одну из сторон (Орел или Решка), и в случае вашего неудачного выбора противник может нанести вам огромный урон или тут же убить</p>
+                    <p>Способов избежать такого умения несколько:</p>
+                    <ul>
+                        <li>встать в защиту, используя опцию “Защититься” перед тем, как враг использует свой навык</li>
+                        <li>отрубить конечность, которой осуществляется использование навыка</li>
+                        <li>убить врага до его использования подобного навыка</li>
+                    </ul>
+                </div>
+                <div class="main_conteiner__content" id="fears">
+                    <p class="h2_text">Страхи</p>
+                    <p>Еще одна неприятная механика игры - фобии. У любого персонажа в отряде изначально есть некая случайно выбранная фобия. Она влияет на получение и нанесение урона по определенным противникам, которые “триггерят” данную фобию: урон по таким противникам понижается на 50%, а их урон по герою с фобией, наоборот, повышается на 50%</p>
+                    <p>Более подробно о них можно почитать в пункте Фобии раздела Гайд</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="./scripts/script.js"></script>
+<script src="./scripts/LogRegScript.js"></script>
+
+</html>
