@@ -5,7 +5,7 @@ function charPageOpen(listName, charName) {
     localStorage.setItem('listName', listName);
     localStorage.setItem('charName', charName);
 
-    window.open('../pages/characterPage.html', '_self');
+    window.open('pages/characterPage.html', '_self');
 }
 
 function initApp(nameGame, listName){
