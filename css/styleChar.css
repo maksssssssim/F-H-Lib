@@ -1,0 +1,56 @@
+.main_conteiner__header {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.main_conteiner__container {
+    margin-top: 30px;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 33px;
+}
+
+.character_card {
+    width: 200px;
+    height: 350px;
+    border: white 2px solid;
+    border-radius: 16px;
+}
+
+.character_card a {
+    text-decoration: none;
+}
+
+.character_card img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 14px 14px 0px 0px;
+    background-color: #818181;
+}
+
+.character_card .hover_line {
+    width: inherit;
+    height: 10px;
+    background-color: #7D2E2B;
+}
+
+.character_card .charName {
+    font-size: 21px;
+    font-weight: bold;
+    padding: 15px 20px;
+}
+
+.character_card .charType {
+    font-size: 16px;
+    color: #818181;
+    font-weight: bold;
+    padding: 45px 20px 20px 20px;
+}
+
+.character_card:hover .charText {
+    background-color: #7D2E2B;
+    border-radius: 0px 0px 14px 14px;
+}

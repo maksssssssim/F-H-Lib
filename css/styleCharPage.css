@@ -1,0 +1,119 @@
+.main_conteiner__container {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    margin-bottom: 40px;
+}
+
+.aside.play, 
+.aside.enemy {
+    height: 2250px;
+}
+
+.aside.non-play {
+    height: 1850px;
+}
+
+.aside.item {
+    height: 1250px;
+}
+
+p {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.main_info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    height: calc(100vh - 137px);
+    gap: 95px;
+    width: 100%;
+}
+
+.main_info img {
+    width: 150%;
+    height: 100%;
+}
+
+.main_info__info {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main_info__info_alert {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 30px 70px 30px 40px;
+    border: #AF8965 4px solid;
+    border-radius: 60px 60px 60px 0px;
+    width: fit-content;
+}
+
+.main_info__info_alert img {
+    width: 60px;
+    height: 60px;
+}
+
+.attention__text p#adding {
+    font-weight: 400;
+}
+
+.main_info__info_text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+p.h2_text {
+    font-size: 3em;
+    font-weight: 600;
+    color: #AF8965;
+}
+
+.main_info__info_atributes {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    gap: 50px;
+}
+
+.atribut {
+    display: flex;
+    gap: 10px;
+}
+
+img.icon {
+    width: 60px;
+    height: 60px;
+}
+
+.char_history, .characteristics, 
+.equipment, .connecting, 
+.party_add, .special_skills {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+p.h3_text {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+ul {
+    margin: 0px 20px;
+    list-style-type: disc;
+    max-width: 300px;
+}
+
+ul li {
+    font-size: 1em;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
