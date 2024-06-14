@@ -63,7 +63,7 @@ function initApp(listName, char){
                 </div>
                 <div class="main_info__info_alert">
                     <span>
-                        <img src="../components/attention_vector.svg" alt="">
+                        <img src="./components/attention_vector.svg" alt="">
                     </span>
                     <div class="attention__text">
                         <p>Дальше будут спойлеры!</p>
@@ -146,7 +146,7 @@ function initApp(listName, char){
                 </div>
                 <div class="main_info__info_alert">
                     <span>
-                        <img src="../components/attention_vector.svg" alt="">
+                        <img src="./components/attention_vector.svg" alt="">
                     </span>
                     <div class="attention__text">
                         <p>Дальше будут спойлеры!</p>
@@ -202,7 +202,7 @@ function initApp(listName, char){
                 </div>
                 <div class="main_info__info_alert">
                     <span>
-                        <img src="../components/attention_vector.svg" alt="">
+                        <img src="./components/attention_vector.svg" alt="">
                     </span>
                     <div class="attention__text">
                         <p>Дальше будут спойлеры!</p>
@@ -285,7 +285,7 @@ function initApp(listName, char){
                 </div>
                 <div class="main_info__info_alert">
                     <span>
-                        <img src="../components/attention_vector.svg" alt="">
+                        <img src="./components/attention_vector.svg" alt="">
                     </span>
                     <div class="attention__text">
                         <p>Дальше будут спойлеры!</p>
@@ -329,7 +329,6 @@ function checkChar(nameGame, charName){
 window.onload = function() {
     title.innerHTML = `${localStorage.getItem('charName')}`
     checkChar(localStorage.getItem('listName'), localStorage.getItem('charName'));
-    console.log('загруженно');
 }
 
 window.closed = function(){
