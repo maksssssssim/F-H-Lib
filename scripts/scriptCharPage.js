@@ -7,7 +7,7 @@ function tableInit(listData){
 
     let headerRow = table.insertRow();
     let headerCell = headerRow.insertCell();
-    headerRow.setAttribute('colspan', Object.keys(listData).length);
+    headerCell.setAttribute('colspan', Object.keys(listData).length);
     headerCell.innerHTML = `Часть тела`;
 
     for(let i = 0; i < 2; i++){
