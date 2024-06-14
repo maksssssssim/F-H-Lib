@@ -37,7 +37,7 @@ function initApp(listName, char){
                     <div class="main_info__info_atributes">
                         <div class="atribut">
                             <span>
-                                <img class="icon" src="./components/" alt="gender">
+                                <img class="icon" src="#" alt="gender">
                             </span>
                             <p>Пол</p>
                         </div>
@@ -63,7 +63,7 @@ function initApp(listName, char){
                 </div>
                 <div class="main_info__info_alert">
                     <span>
-                        <img src="../components/attention_vector.svg" alt="">
+                        <img src="./components/attention_vector.svg" alt="">
                     </span>
                     <div class="attention__text">
                         <p>Дальше будут спойлеры!</p>
@@ -146,7 +146,7 @@ function initApp(listName, char){
                 </div>
                 <div class="main_info__info_alert">
                     <span>
-                        <img src="../components/attention_vector.svg" alt="">
+                        <img src="./components/attention_vector.svg" alt="">
                     </span>
                     <div class="attention__text">
                         <p>Дальше будут спойлеры!</p>
@@ -202,7 +202,7 @@ function initApp(listName, char){
                 </div>
                 <div class="main_info__info_alert">
                     <span>
-                        <img src="../components/attention_vector.svg" alt="">
+                        <img src="./components/attention_vector.svg" alt="">
                     </span>
                     <div class="attention__text">
                         <p>Дальше будут спойлеры!</p>
@@ -285,7 +285,7 @@ function initApp(listName, char){
                 </div>
                 <div class="main_info__info_alert">
                     <span>
-                        <img src="../components/attention_vector.svg" alt="">
+                        <img src="./components/attention_vector.svg" alt="">
                     </span>
                     <div class="attention__text">
                         <p>Дальше будут спойлеры!</p>
