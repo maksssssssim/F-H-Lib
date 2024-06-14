@@ -17,6 +17,7 @@
     height: 350px;
     border: white 2px solid;
     border-radius: 16px;
+    overflow: hidden;
 }
 
 .character_card a {
