@@ -326,7 +326,7 @@ function checkChar(nameGame, charName){
     });
 }
 
-window.onload = function(){
+window.addEventListener("load",() => {
     title.innerHTML = `${localStorage.getItem('charName')}`
     checkChar(localStorage.getItem('listName'), localStorage.getItem('charName'));
 }
