@@ -33,6 +33,8 @@ window.onload = function() {
         accountDiv.classList.remove('disactive');
         btnDiv.classList.add('disactive');
         userName.innerHTML = `${localStorage.getItem('activeUser')}`
+    }else{
+        localStorage.setItem('activeUser', null)
     }
 }
 
