@@ -26,6 +26,8 @@ const RegPassword = document.querySelector('#RegPassword');
 const RegSubmit = document.querySelector('#register');
 const alertMes = document.querySelector('#RegAlert');
 
+const reEmail = /^[\w]{1}[\w-\.]*@[\w-]+\.[a-z]{2,4}$/i;
+
 window.onload = function() {
     if(!(localStorage.getItem('activeUser') === null)){
         accountDiv.classList.remove('disactive');
@@ -113,42 +115,48 @@ RegSubmit.addEventListener('click', () => {
         users = JSON.parse(localStorage.getItem('users')); 
     }
 
-    if(Object.keys(users).length === 0){
-        const user = new User(nameUser, emailUser, passwordUser);
-        const userId = 'User' + createId(users);
+    let valid = reEmail.test(emailUser);
 
-        users[userId] = user;
-        alertMes.innerHTML = `Пользователь зарегистрирован`;
-
-        accountDiv.classList.remove('disactive');
-        btnDiv.classList.add('disactive');
-        userName.innerHTML = `${nameUser}`
-
-        localStorage.setItem('activeUser', nameUser)
-        closePopup();
-    }else{
-        Object.entries(users).forEach(([key, value]) => {
-            Object.entries(value).forEach(([key, value]) => {
-                if(key === 'email'){
-                    if(value === emailUser){
-                        alertMes.innerHTML = `Пользователь уже существует`;
-                    }else{
-                        const user = new User(nameUser, emailUser, passwordUser);
-                        const userId = 'User' + createId(users);
-        
-                        users[userId] = user;
-                        alertMes.innerHTML = `Пользователь зарегистрирован`;
-
-                        btnDiv.classList.add('disactive');
-                        accountDiv.classList.remove('disactive');
-                        userName.innerHTML = `${nameUser}`
-
-                        localStorage.setItem('activeUser', nameUser)
-                        closePopup();
-                    };
-                }
+    if(valid){
+        if(Object.keys(users).length === 0){
+            const user = new User(nameUser, emailUser, passwordUser);
+            const userId = 'User' + createId(users);
+    
+            users[userId] = user;
+            alertMes.innerHTML = `Пользователь зарегистрирован`;
+    
+            accountDiv.classList.remove('disactive');
+            btnDiv.classList.add('disactive');
+            userName.innerHTML = `${nameUser}`
+    
+            localStorage.setItem('activeUser', nameUser)
+            closePopup();
+        }else{
+            Object.entries(users).forEach(([key, value]) => {
+                Object.entries(value).forEach(([key, value]) => {
+                    if(key === 'email'){
+                        if(value === emailUser){
+                            alertMes.innerHTML = `Пользователь уже существует`;
+                        }else{
+                            const user = new User(nameUser, emailUser, passwordUser);
+                            const userId = 'User' + createId(users);
+            
+                            users[userId] = user;
+                            alertMes.innerHTML = `Пользователь зарегистрирован`;
+    
+                            btnDiv.classList.add('disactive');
+                            accountDiv.classList.remove('disactive');
+                            userName.innerHTML = `${nameUser}`
+    
+                            localStorage.setItem('activeUser', nameUser)
+                            closePopup();
+                        };
+                    }
+                });
             });
-        });
+        }
+    }else{
+        alertMes.innerHTML = `Почта указана некорректно`;
     }
 
     localStorage.setItem('users', JSON.stringify(users));
