@@ -10,6 +10,8 @@ const postName = document.querySelector('#postName');
 const postTheme = document.querySelector('#postTheme');
 const postText = document.querySelector('#postText');
 
+const userAlert = document.querySelector('.userAlert');
+
 let posts_list = {}
 
 addButton.addEventListener('click', () => {
@@ -74,6 +76,11 @@ window.addEventListener('load', function() {
         localStorage.setItem('postsList', JSON.stringify(posts_list));
     }else{
         posts_list = JSON.parse(localStorage.getItem('postsList')); 
+    }
+
+    if(localStorage.getItem('activeUser') === null){
+        addButton.classList.add('disactive');
+        userAlert.classList.remove('disactive);
     }
 
     let counter = 0;
