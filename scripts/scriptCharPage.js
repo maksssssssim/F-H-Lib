@@ -38,25 +38,25 @@ function initApp(listName, char){
                     <div class="main_info__info_atributes">
                         <div class="atribut">
                             <span>
-                                <img class="icon" src="#" alt="gender">
+                                <img class="icon" src="./components/gender_icon.svg" alt="gender">
                             </span>
                             <p>Пол</p>
                         </div>
                         <div class="atribut">
                             <span>
-                                <img class="icon" src="#" alt="species">
+                                <img class="icon" src="./components/species_icon.svg" alt="species">
                             </span>
                             <p>Вид</p>
                         </div>
                         <div class="atribut">
                             <span>
-                                <img class="icon" src="#" alt="place">
+                                <img class="icon" src="./components/location_icon.svg" alt="place">
                             </span>
                             <p>Место рождения</p>
                         </div>
                         <div class="atribut">
                             <span>
-                                <img class="icon" src="#" alt="soul">
+                                <img class="icon" src="./components/soul_icon.svg" alt="soul">
                             </span>
                             <p>Душа</p>
                         </div>
@@ -127,19 +127,19 @@ function initApp(listName, char){
                     <div class="main_info__info_atributes">
                         <div class="atribut">
                             <span>
-                                <img class="icon" src="#" alt="gender">
+                                <img class="icon" src="./components/gender_icon.svg" alt="gender">
                             </span>
                             <p>Пол</p>
                         </div>
                         <div class="atribut">
                             <span>
-                                <img class="icon" src="#" alt="species">
+                                <img class="icon" src="./components/species_icon.svg" alt="species">
                             </span>
                             <p>Вид</p>
                         </div>
                         <div class="atribut">
                             <span>
-                                <img class="icon" src="#" alt="place">
+                                <img class="icon" src="./components/location_icon.svg" alt="place">
                             </span>
                             <p>Место рождения</p>
                         </div>
@@ -183,19 +183,19 @@ function initApp(listName, char){
                     <div class="main_info__info_atributes">
                         <div class="atribut">
                             <span>
-                                <img class="icon" src="#" alt="gender">
+                                <img class="icon" src="./components/gender_icon.svg" alt="gender">
                             </span>
                             <p>Пол</p>
                         </div>
                         <div class="atribut">
                             <span>
-                                <img class="icon" src="#" alt="species">
+                                <img class="icon" src="./components/species_icon.svg" alt="species">
                             </span>
                             <p>Вид</p>
                         </div>
                         <div class="atribut">
                             <span>
-                                <img class="icon" src="#" alt="place">
+                                <img class="icon" src="./components/location_icon.svg" alt="place">
                             </span>
                             <p>Локация спавна</p>
                         </div>
@@ -260,25 +260,25 @@ function initApp(listName, char){
                     <div class="main_info__info_atributes">
                         <div class="atribut">
                             <span>
-                                <img class="icon" src="#" alt="importance">
+                                <img class="icon" src="./components/important.svg" alt="importance">
                             </span>
                             <p>Обычный предмет</p>
                         </div>
                         <div class="atribut">
                             <span>
-                                <img class="icon" src="#" alt="coin">
+                                <img class="icon" src="./components/coin_icon.svg" alt="coin">
                             </span>
                             <p>Цена</p>
                         </div>
                         <div class="atribut">
                             <span>
-                                <img class="icon" src="#" alt="reuse">
+                                <img class="icon" src="./components/recicle_icon.svg" alt="reuse">
                             </span>
                             <p>Потребляемость</p>
                         </div>
                         <div class="atribut">
                             <span>
-                                <img class="icon" src="#" alt="mechanic">
+                                <img class="icon" src="./components/mechanic_icon.svg" alt="mechanic">
                             </span>
                             <p>На ком применяется</p>
                         </div>
