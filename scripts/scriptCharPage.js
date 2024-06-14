@@ -6,8 +6,9 @@ function tableInit(listData){
     let table = document.createElement('table');
 
     let headerRow = table.insertRow();
+    let headerCell = headerRow.insertCell();
     headerRow.setAttribute('colspan', Object.keys(listData).length);
-    headerRow.innerHTML = `Часть тела`;
+    headerCell.innerHTML = `Часть тела`;
 
     for(let i = 0; i < 2; i++){
         let row = table.insertRow();
