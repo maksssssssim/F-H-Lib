@@ -137,6 +137,13 @@ aside.disactive {
     background-color: #A0A0A4;
 }
 
+.userAlert {
+    wifth: 100%;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+}
+
 #postContainer {
     margin-top: 20px;
     width: 100%;
