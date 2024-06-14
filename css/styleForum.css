@@ -144,6 +144,11 @@ aside.disactive {
     color: white;
 }
 
+.userAlert.disactive, 
+.add_btn.disactive {
+    display: none;
+}
+
 #postContainer {
     margin-top: 20px;
     width: 100%;
