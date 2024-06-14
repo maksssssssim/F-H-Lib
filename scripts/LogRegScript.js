@@ -26,13 +26,13 @@ const RegPassword = document.querySelector('#RegPassword');
 const RegSubmit = document.querySelector('#register');
 const alertMes = document.querySelector('#RegAlert');
 
-window.addEventListener('load', function() {
+window.onload = function() {
     if(!(localStorage.getItem('activeUser') === null)){
         accountDiv.classList.remove('disactive');
         btnDiv.classList.add('disactive');
         userName.innerHTML = `${localStorage.getItem('activeUser')}`
     }
-})
+}
 
 function resetForms(){
     LogForm.reset();
