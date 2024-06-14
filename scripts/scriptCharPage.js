@@ -37,7 +37,7 @@ function initApp(listName, char){
                     <div class="main_info__info_atributes">
                         <div class="atribut">
                             <span>
-                                <img class="icon" src="#" alt="gender">
+                                <img class="icon" src="./components/" alt="gender">
                             </span>
                             <p>Пол</p>
                         </div>
