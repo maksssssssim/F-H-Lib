@@ -329,6 +329,7 @@ function checkChar(nameGame, charName){
 window.onload = function() {
     title.innerHTML = `${localStorage.getItem('charName')}`
     checkChar(localStorage.getItem('listName'), localStorage.getItem('charName'));
+    console.log('загруженно');
 }
 
 window.closed = function(){
