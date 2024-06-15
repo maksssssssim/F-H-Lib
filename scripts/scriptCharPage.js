@@ -256,7 +256,7 @@ function initApp(listName, char){
                         <img src="./components/attention_vector.svg" alt="">
                     </span>
                     <div class="attention__text">
-                        <p>Дальше будут спойлеры!</p>
+                        <p>Присутствуют спойлеры!</p>
                         <p id="adding">Читать на свой страх и риск!</p>
                     </div>
                 </div>
