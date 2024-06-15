@@ -290,6 +290,7 @@ function initApp(listName, char){
             </div>
             <div class="party_add" id='ul_4'>
                 <p class="h2_text">Эффекты и применение</p>
+                ${createUl(char.effects, 'ul_4')};
             </div>
         </div>`;
         aside.classList.add('item');
