@@ -227,7 +227,7 @@ function initApp(listName, char){
                     <div class="main_info__info_atributes items">
                         <div class="atribut">
                             <span>
-                                <img class="icon" src="./components/icon_important.svg" alt="importance">
+                                <img class="icon" src="./components/item_important.svg" alt="importance">
                             </span>
                             <p>${char.charImportance}</p>
                         </div>
