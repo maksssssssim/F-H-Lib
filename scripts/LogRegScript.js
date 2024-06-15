@@ -34,7 +34,7 @@ window.onload = function() {
         btnDiv.classList.add('disactive');
         userName.innerHTML = `${localStorage.getItem('activeUser')}`
     }else{
-        localStorage.setItem('activeUser')
+        localStorage.setItem('activeUser', 'NaN')
     }
 }
 
