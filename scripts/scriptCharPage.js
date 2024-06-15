@@ -288,15 +288,15 @@ function checkChar(nameGame, charName){
             initApp(nameGame, element);
             
             if(element.charType === 'Предмет'){
-                createUl(char.effects, 'ul_4');
+                createUl(element.effects, 'ul_4');
             }else if(element.charType === 'Игровой'){
-                createUl(char.effects, 'ul_1');
-                createUl(char.effects, 'ul_2');
+                createUl(element.effects, 'ul_1');
+                createUl(element.effects, 'ul_2');
             }
             
             if(element.charType === 'Враг'){
                 tableInit(element.charHP);
-                createUl(char.effects, 'ul_3');
+                createUl(element.effects, 'ul_3');
             }
         }
     });
