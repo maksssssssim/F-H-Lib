@@ -74,7 +74,6 @@ const cards_list = [
 const items_list = [
     {
         charId: 'meatPie',
-        charImage: list_path + 'meat_pie.webp',
         charName: 'Мясной пирог',
         charType: 'Предмет', 
         charDesc: 'Старомодный мясной пирог. Довольно прост в приготовлении.', 
@@ -87,7 +86,6 @@ const items_list = [
     },
     {
         charId: 'driedMeat',
-        charImage: list_path + 'dried_meat.webp',
         charName: 'Вяленое мясо',
         charType: 'Предмет', 
         charDesc: 'Высушенные во избежание порчи, полоски мяса.', 
@@ -100,7 +98,6 @@ const items_list = [
     },
     {
         charId: 'whiskeyBottle',
-        charImage: list_path + 'whiskey_bottle.webp',
         charName: 'Бутылка виски',
         charType: 'Предмет', 
         charDesc: 'Бутылка старого виски. Поможет сохранить рассудок в вечно давящей тьме.', 
@@ -113,7 +110,6 @@ const items_list = [
     },
     {
         charId: 'cheese',
-        charImage: list_path + 'cheese.webp',
         charName: 'Сыр',
         charType: 'Предмет', 
         charDesc: 'Старый засохший сыр. Пахнет довольно неприятно.', 
@@ -126,7 +122,6 @@ const items_list = [
     },
     {
         charId: 'ale',
-        charImage: list_path + 'whiskey_bottle.webp',
         charName: 'Эль',
         charType: 'Предмет', 
         charDesc: 'Бутылка эля. Эль внутри мутный. Помогает вам сохранить рассудок в вечно давящей тьме.', 
@@ -139,7 +134,6 @@ const items_list = [
     },
     {
         charId: 'carrot',
-        charImage: list_path + 'carrot.webp',
         charName: 'Морковь',
         charType: 'Предмет', 
         charDesc: 'Вполне съедобная морковь.', 
@@ -152,7 +146,6 @@ const items_list = [
     },
     {
         charId: 'cloudyBottle',
-        charImage: list_path + 'cloudy_bottle.webp',
         charName: 'Мутный флакон',
         charType: 'Предмет', 
         charDesc: 'Флакон с мутной легковоспаменяющейся жидкостью внутри.', 
@@ -165,7 +158,6 @@ const items_list = [
     },
     {
         charId: 'opium',
-        charImage: list_path + 'opium.webp',
         charName: 'Опиум',
         charType: 'Предмет', 
         charDesc: 'Если у вас есть трубка, вы можете его покурить. Обладает успокаивающим эффектом, снижает страх.', 
@@ -178,7 +170,6 @@ const items_list = [
     },
     {
         charId: 'herbsMixture',
-        charImage: list_path + 'herbs_mixture.webp',
         charName: 'Смесь красной и зеленой травы',
         charType: 'Предмет', 
         charDesc: 'Смесь трав, обладающая особенно сильным действием.', 
@@ -191,7 +182,6 @@ const items_list = [
     },
     {
         charId: 'torch',
-        charImage: list_path + 'torch.webp',
         charName: 'Факел',
         charType: 'Предмет', 
         charDesc: 'Деревянная палка, обмотанная ветошью, чтобы продлить горение. При использовании замедляются эффекты тьмы.', 
@@ -204,7 +194,6 @@ const items_list = [
     },
     {
         charId: 'alchemelia1',
-        charImage: list_path + 'alchemelia1.webp',
         charName: 'Алхимелия том 1',
         charType: 'Предмет', 
         charDesc: 'Книга, содержащая рецепты основных трав и растений.', 
@@ -217,7 +206,6 @@ const items_list = [
     },
     {
         charId: 'shortSword',
-        charImage: list_path + 'short_sword.webp',
         charName: 'Короткий меч',
         charType: 'Предмет', 
         charDesc: 'Короткий железный меч. Лезвие немного изношено, но сам меч легок и быстр в обращении.', 
