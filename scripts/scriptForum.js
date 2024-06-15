@@ -69,7 +69,7 @@ function dict_reverse(obj) {
       new_obj[i] = obj[i];
     })
     return new_obj;
-  }
+}
 
 window.addEventListener('load', function() {
     if(localStorage.getItem('postsList') === null){
