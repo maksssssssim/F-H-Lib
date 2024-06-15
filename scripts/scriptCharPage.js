@@ -25,6 +25,18 @@ function tableInit(listData){
     document.getElementsByClassName('charTable')[0].appendChild(table);
 }
 
+function createUl(listData, id){
+    let ul = document.createElement('ul');
+
+    for(let i = 0; i < listData.lenght; i++){
+        let li = document.createElement('li');
+        li.innerHTML = `%{listData[i}`;
+        ul.appendChild(li);
+    }
+
+    document.getElementById(id)[0]
+}
+
 function initApp(listName, char){
     let newDiv = document.createElement('div');
     newDiv.classList.add('main_conteiner__container');
@@ -83,7 +95,7 @@ function initApp(listName, char){
             <div class="characteristics_conteiner">
             </div>
         </div>
-        <div class="equipment">
+        <div class="equipment" id='ul_1'>
             <p class="h2_text">Экипировка</p>
             <p class="h3_text">Стартовый набор</p>
             <ul>
@@ -94,7 +106,7 @@ function initApp(listName, char){
                 <li>Описание стартового набора</li>
             </ul>
         </div>
-        <div class="party_add">
+        <div class="party_add" id='ul_2'>
             <p class="h2_text">Вербовка</p>
             <ul>
                 <li>Описание способа вербовки</li>
@@ -216,7 +228,7 @@ function initApp(listName, char){
         <div class="charTable">
             <p class="h2_text">Здоровье</p>
         </div>
-        <div class="party_add">
+        <div class="party_add" id='ul_3'>
             <p class="h2_text">Навыки</p>
             <ul>
                 <li>Описание навыков</li>
@@ -278,7 +290,7 @@ function initApp(listName, char){
             <p class="h2_text">Метод получения</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo quaerat voluptas, reprehenderit non deserunt modi excepturi adipisci dolore ad qui, quidem repudiandae dolorem veritatis enim quam sed similique, animi veniam?</p>
         </div>
-        <div class="party_add">
+        <div class="party_add" id='ul_4'>
             <p class="h2_text">Эффекты и применение</p>
             <ul>
                 <li>Описание навыков</li>
