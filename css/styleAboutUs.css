@@ -53,6 +53,10 @@
     gap: 10px;
 }
 
+.endLine {
+    justify-content: end;
+}
+
 .about_us__container#left {
     text-align: end;
 }
