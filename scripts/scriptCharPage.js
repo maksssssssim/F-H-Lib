@@ -98,24 +98,9 @@ function initApp(listName, char){
         <div class="equipment" id='ul_1'>
             <p class="h2_text">Экипировка</p>
             <p class="h3_text">Стартовый набор</p>
-            <ul>
-                <li>Описание стартового набора</li>
-                <li>Описание стартового набора</li>
-                <li>Описание стартового набора</li>
-                <li>Описание стартового набора</li>
-                <li>Описание стартового набора</li>
-            </ul>
         </div>
         <div class="party_add" id='ul_2'>
             <p class="h2_text">Вербовка</p>
-            <ul>
-                <li>Описание способа вербовки</li>
-                <li>Описание способа вербовки</li>
-                <li>Описание способа вербовки</li>
-                <li>Описание способа вербовки</li>
-                <li>Описание способа вербовки</li>
-                <li>Описание способа вербовки</li>
-            </ul> 
         </div>`;
         aside.classList.add('play')
     }else if(listName === 'characters' & char.charType === 'Не игровой'){
@@ -230,14 +215,6 @@ function initApp(listName, char){
         </div>
         <div class="party_add" id='ul_3'>
             <p class="h2_text">Навыки</p>
-            <ul>
-                <li>Описание навыков</li>
-                <li>Описание навыков</li>
-                <li>Описание навыков</li>
-                <li>Описание навыков</li>
-                <li>Описание навыков</li>
-                <li>Описание навыков</li>
-            </ul> 
         </div>`;
         aside.classList.add('enemy')
     }else if(listName === 'items'){
@@ -291,7 +268,6 @@ function initApp(listName, char){
                 </div>
                 <div class="party_add" id='ul_4'>
                     <p class="h2_text">Эффекты и применение</p>
-                    ${createUl(char.effects, 'ul_4')};
                 </div>
             </div>
         </div>`;
@@ -310,8 +286,17 @@ function checkChar(nameGame, charName){
     myList.forEach(element => {
         if(element.charId === charName){
             initApp(nameGame, element);
+            
+            if(element.charType === 'Предмет'){
+                createUl(char.effects, 'ul_4');
+            }else if(element.charType === 'Игровой'){
+                createUl(char.effects, 'ul_1');
+                createUl(char.effects, 'ul_2');
+            }
+            
             if(element.charType === 'Враг'){
                 tableInit(element.charHP);
+                createUl(char.effects, 'ul_3');
             }
         }
     });
