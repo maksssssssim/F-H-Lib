@@ -30,7 +30,7 @@ function createUl(listData, id){
 
     console.log(listData);
 
-    for(let i = 0; i < listData.lenght; i++){
+    for(let i = 0; i < listData.length; i++){
         console.log('цикл работает');
         let li = document.createElement('li');
         console.log('элемент списка создается');
