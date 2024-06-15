@@ -162,6 +162,7 @@ RegSubmit.addEventListener('click', () => {
     }
 
     localStorage.setItem('users', JSON.stringify(users));
+    location.reload();
     resetForms();
 });
 
@@ -189,5 +190,6 @@ LogSubmit.addEventListener('click', () => {
     });
 
     localStorage.setItem('users', JSON.stringify(users));
+    location.reload();
     resetForms();
 })
