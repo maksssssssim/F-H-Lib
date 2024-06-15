@@ -12,7 +12,18 @@ function initApp(nameGame, listName){
     nameGame.forEach((char) =>{
         let newDiv = document.createElement('div');
         newDiv.classList.add('character_card');
-        newDiv.innerHTML = `
+        if(listName === 'items'){
+            newDiv.innerHTML = `
+            <a class="${listName} ${char.charId}" onclick="charPageOpen(this.classList[0], this.classList[1])">
+                <span class="background_elem"></span>
+                <div class="hover_line"></div>
+                <div class=charText>
+                    <p class="charName">${char.charName}</p>
+                    <p class="charType">${char.charType}</p>
+                </div>
+            </a>`;
+        }else{
+            newDiv.innerHTML = `
             <a class="${listName} ${char.charId}" onclick="charPageOpen(this.classList[0], this.classList[1])">
                 <img src="${char.charImage}">
                 <div class="hover_line"></div>
@@ -21,6 +32,7 @@ function initApp(nameGame, listName){
                     <p class="charType">${char.charType}</p>
                 </div>
             </a>`;
+        }
         mainContainer.appendChild(newDiv);
     })
 }
