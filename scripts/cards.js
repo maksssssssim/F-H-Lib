@@ -73,9 +73,16 @@ const cards_list = [
 
 const items_list = [
     {
-        charImage: list_path + 'characters/Albedo_Icon.PNG',
-        charName: 'Albedo',
-        charType: 'Предмет'
+        charImage: 'https://static.wikia.nocookie.net/fearandhunger/images/3/3b/Пирог.png/revision/latest?cb=20230216141238&path-prefix=ru',
+        charName: 'Мясной пирог',
+        charType: 'Предмет', 
+        charDesc: 'Старомодный мясной пирог. Довольно прост в приготовлении.', 
+        charImportance: 'Обычный', 
+        charPrice: '0', 
+        charReuse: 'Потребляемый', 
+        charMechanic: 'На союзнике', 
+        wayToHave: 'Можно сделать из яйца, муки и сушеного мяса, зная рецепт. Редко выпадает из контейнеров.', 
+        effects: ['Восстанавливает 90% сытости']
     },
     {
         charImage: list_path +  'characters/Alhaitham_Icon.PNG',
