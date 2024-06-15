@@ -300,7 +300,13 @@ function initApp(listName, char){
 }
 
 function checkChar(nameGame, charName){
-    cards_list.forEach(element => {
+    let myList;
+    if(nameGame === 'items'){
+        myList = items_list;
+    }else{
+        myList = cards_list;
+    }
+    myList.forEach(element => {
         if(element.charId === charName){
             initApp(nameGame, element);
             if(element.charType === 'Враг'){
