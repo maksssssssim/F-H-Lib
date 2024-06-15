@@ -73,6 +73,7 @@ const cards_list = [
 
 const items_list = [
     {
+        charId: 'meatPie',
         charImage: list_path + 'meat_pie.webp',
         charName: 'Мясной пирог',
         charType: 'Предмет', 
