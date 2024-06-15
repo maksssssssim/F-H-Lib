@@ -30,7 +30,7 @@ function createUl(listData, id){
 
     for(let i = 0; i < listData.lenght; i++){
         let li = document.createElement('li');
-        li.innerHTML = `%{listData[i}`;
+        li.innerHTML = `${listData[i]}`;
         ul.appendChild(li);
     }
 
