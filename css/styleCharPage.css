@@ -69,11 +69,11 @@ p {
     gap: 20px;
 }
 
-aside.item .main_info__info_atributes {
+.main_info__info_atributes.items {
     margin-top: 180px;
 }
 
-aside.item .main_info__info_add {
+.main_info__info_add.items {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
