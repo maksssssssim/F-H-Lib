@@ -29,10 +29,12 @@ const alertMes = document.querySelector('#RegAlert');
 const reEmail = /^[\w]{1}[\w-\.]*@[\w-]+\.[a-z]{2,4}$/i;
 
 window.onload = function() {
-    if((!(localStorage.getItem('activeUser') === 'NaN')) || (!(localStorage.getItem('activeUser') === null))){
-        accountDiv.classList.remove('disactive');
-        btnDiv.classList.add('disactive');
-        userName.innerHTML = `${localStorage.getItem('activeUser')}`
+    if(!(localStorage.getItem('activeUser') === null)){
+        if(!(localStorage.getItem('activeUser') === 'NaN')){
+            accountDiv.classList.remove('disactive');
+            btnDiv.classList.add('disactive');
+            userName.innerHTML = `${localStorage.getItem('activeUser')}`   
+        }
     }else{
         localStorage.setItem('activeUser', 'NaN')
     }
