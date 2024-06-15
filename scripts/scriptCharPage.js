@@ -34,7 +34,7 @@ function createUl(listData, id){
         ul.appendChild(li);
     }
 
-    document.getElementById(id)[0]
+    document.getElementById(id).appendChild(ul);
 }
 
 function initApp(listName, char){
@@ -246,31 +246,31 @@ function initApp(listName, char){
             <div class="main_info__info">
                 <div class="main_info__info_text">
                     <p class="h2_text">${char.charName}</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, neque expedita ipsum velit natus reiciendis sit sint, quae porro eius rem veritatis ab vel molestias qui debitis. Consequuntur, ullam. Molestias.</p>
+                    <p>${char.charDesc}</p>
                     <div class="main_info__info_atributes">
                         <div class="atribut">
                             <span>
                                 <img class="icon" src="./components/important.svg" alt="importance">
                             </span>
-                            <p>Обычный предмет</p>
+                            <p>${char.charImportance}</p>
                         </div>
                         <div class="atribut">
                             <span>
                                 <img class="icon" src="./components/coin_icon.svg" alt="coin">
                             </span>
-                            <p>Цена</p>
+                            <p>${char.charPrice}</p>
                         </div>
                         <div class="atribut">
                             <span>
                                 <img class="icon" src="./components/recicle_icon.svg" alt="reuse">
                             </span>
-                            <p>Потребляемость</p>
+                            <p>${char.charReuse}</p>
                         </div>
                         <div class="atribut">
                             <span>
                                 <img class="icon" src="./components/mechanic_icon.svg" alt="mechanic">
                             </span>
-                            <p>На ком применяется</p>
+                            <p>${char.charMechanic}</p>
                         </div>
                     </div>
                 </div>
@@ -284,22 +284,15 @@ function initApp(listName, char){
                     </div>
                 </div>
             </div>
-            <img src="#" alt="char_photo">
+            <img src="${char.charImage}" alt="char_photo">
         </div>
         <div class="char_history">
             <p class="h2_text">Метод получения</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo quaerat voluptas, reprehenderit non deserunt modi excepturi adipisci dolore ad qui, quidem repudiandae dolorem veritatis enim quam sed similique, animi veniam?</p>
+            <p>${char.wayToHave}</p>
         </div>
         <div class="party_add" id='ul_4'>
             <p class="h2_text">Эффекты и применение</p>
-            <ul>
-                <li>Описание навыков</li>
-                <li>Описание навыков</li>
-                <li>Описание навыков</li>
-                <li>Описание навыков</li>
-                <li>Описание навыков</li>
-                <li>Описание навыков</li>
-            </ul> 
+            createUl(char.effects, 'ul_4');
         </div>`;
         aside.classList.add('item')
     }
