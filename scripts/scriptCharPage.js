@@ -284,15 +284,14 @@ function initApp(listName, char){
                     </div>
                 </div>
             </div>
-            <img src="${char.charImage}" alt="char_photo">
-        </div>
-        <div class="char_history">
-            <p class="h2_text">Метод получения</p>
-            <p>${char.wayToHave}</p>
-        </div>
-        <div class="party_add" id='ul_4'>
-            <p class="h2_text">Эффекты и применение</p>
-            ${createUl(char.effects, 'ul_4')};
+            <div class="char_history">
+                <p class="h2_text">Метод получения</p>
+                <p>${char.wayToHave}</p>
+            </div>
+            <div class="party_add" id='ul_4'>
+                <p class="h2_text">Эффекты и применение</p>
+                ${createUl(char.effects, 'ul_4')};
+            </div>
         </div>`;
         aside.classList.add('item')
     }
