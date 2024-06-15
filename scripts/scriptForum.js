@@ -78,9 +78,9 @@ window.addEventListener('load', function() {
         posts_list = JSON.parse(localStorage.getItem('postsList')); 
     }
 
-    if(localStorage.getItem('activeUser') === null){
-        addButton.classList.add('disactive');
-        userAlert.classList.remove('disactive);
+    if(!(localStorage.getItem('activeUser') === 'NaN')){
+        addButton.classList.remove('disactive');
+        userAlert.classList.add('disactive');
     }
 
     let counter = 0;
