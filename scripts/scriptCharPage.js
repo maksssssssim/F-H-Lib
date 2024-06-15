@@ -301,7 +301,7 @@ function initApp(listName, char){
 
 function checkChar(nameGame, charName){
     cards_list.forEach(element => {
-        if(element.charName === charName){
+        if(element.charId === charName){
             initApp(nameGame, element);
             if(element.charType === 'Враг'){
                 tableInit(element.charHP);
