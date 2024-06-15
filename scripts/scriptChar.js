@@ -13,7 +13,7 @@ function initApp(nameGame, listName){
         let newDiv = document.createElement('div');
         newDiv.classList.add('character_card');
         newDiv.innerHTML = `
-            <a class="${listName} ${char.charName}" onclick="charPageOpen(this.classList[0], this.classList[1])">
+            <a class="${listName} ${char.charId}" onclick="charPageOpen(this.classList[0], this.classList[1])">
                 <img src="${char.charImage}">
                 <div class="hover_line"></div>
                 <div class=charText>
