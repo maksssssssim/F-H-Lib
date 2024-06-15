@@ -73,7 +73,7 @@ const cards_list = [
 
 const items_list = [
     {
-        charImage: 'https://static.wikia.nocookie.net/fearandhunger/images/3/3b/Пирог.png/revision/latest?cb=20230216141238&path-prefix=ru',
+        charImage: list_path + 'meat_pie.webp',
         charName: 'Мясной пирог',
         charType: 'Предмет', 
         charDesc: 'Старомодный мясной пирог. Довольно прост в приготовлении.', 
