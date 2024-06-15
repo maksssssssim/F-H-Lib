@@ -224,7 +224,7 @@ function initApp(listName, char){
                 <div class="main_info__info_text">
                     <p class="h2_text">${char.charName}</p>
                     <p>${char.charDesc}</p>
-                    <div class="main_info__info_atributes">
+                    <div class="main_info__info_atributes items">
                         <div class="atribut">
                             <span>
                                 <img class="icon" src="./components/important.svg" alt="importance">
@@ -261,7 +261,7 @@ function initApp(listName, char){
                     </div>
                 </div>
             </div>
-            <div class="main_info__info_add">
+            <div class="main_info__info_add items">
                 <div class="char_history">
                     <p class="h2_text">Метод получения</p>
                     <p>${char.wayToHave}</p>
