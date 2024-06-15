@@ -69,6 +69,17 @@ p {
     gap: 20px;
 }
 
+aside.item .main_info__info_atributes {
+    margin-top: 180px;
+}
+
+aside.item .main_info__info_add {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60%;
+}
+
 p.h2_text {
     font-size: 3em;
     font-weight: 600;
@@ -110,12 +121,12 @@ p.h3_text {
 ul {
     margin: 0px 20px;
     list-style-type: disc;
-    max-width: 300px;
+    max-width: 500px;
 }
 
 ul li {
-    font-size: 1em;
-    font-weight: 500;
+    font-size: 1.2em;
+    font-weight: 600;
     margin-bottom: 2px;
 }
 
