@@ -28,16 +28,10 @@ function tableInit(listData){
 function createUl(listData, id){
     let ul = document.createElement('ul');
 
-    console.log(listData);
-
     for(let i = 0; i < listData.length; i++){
-        console.log('цикл работает');
         let li = document.createElement('li');
-        console.log('элемент списка создается');
         li.innerHTML = `${listData[i]}`;
-        console.log('текст добавляется');
         ul.appendChild(li);
-        console.log('элемент добавляется в список');
     }
 
     document.getElementById(id).appendChild(ul);
