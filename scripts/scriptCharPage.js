@@ -104,17 +104,6 @@ function initApp(listName, char){
                 <li>Описание способа вербовки</li>
                 <li>Описание способа вербовки</li>
             </ul> 
-        </div>
-        <div class="special_skills">
-            <p class="h2_text">Особые механики</p>
-            <ul>
-                <li>Описание особой механики</li>
-                <li>Описание особой механики</li>
-                <li>Описание особой механики</li>
-                <li>Описание особой механики</li>
-                <li>Описание особой механики</li>
-                <li>Описание особой механики</li>
-            </ul>
         </div>`;
         aside.classList.add('play')
     }else if(listName === 'characters' & char.charType === 'Не игровой'){
@@ -229,17 +218,6 @@ function initApp(listName, char){
         </div>
         <div class="party_add">
             <p class="h2_text">Навыки</p>
-            <ul>
-                <li>Описание навыков</li>
-                <li>Описание навыков</li>
-                <li>Описание навыков</li>
-                <li>Описание навыков</li>
-                <li>Описание навыков</li>
-                <li>Описание навыков</li>
-            </ul> 
-        </div>
-        <div class="party_add">
-            <p class="h2_text">Особые навыки</p>
             <ul>
                 <li>Описание навыков</li>
                 <li>Описание навыков</li>
