@@ -1,4 +1,4 @@
-list_path = 'C:/Users/Кедр/Desktop/кодинг/genshin web/'
+list_path = './components/'
 
 const cards_list = [
     {
