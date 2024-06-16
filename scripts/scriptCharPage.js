@@ -318,7 +318,7 @@ function checkChar(nameGame, charName){
                 createUl(element.effects, 'ul_1');
                 createUl(element.commandAdd, 'ul_2');
                 createUl(element.charSkills, 'ul_5');
-                createPie(element.characterisrics);
+                createPie(element.characteristics);
             }
             
             if(element.charType === 'Враг'){
