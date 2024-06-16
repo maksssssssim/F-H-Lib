@@ -170,6 +170,10 @@ tr:nth-child(1) {
     gap: 16px;
 }
 
+.pieChart p {
+    text-align: center;
+}
+
 .pieNumber {
     fill: none; 
     stroke: #7D2E2B;
