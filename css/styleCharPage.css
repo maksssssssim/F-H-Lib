@@ -157,6 +157,11 @@ tr:nth-child(1) {
     font-weight: 500;
 }
 
+.characteristics_conteiner {
+    display: flex;
+    gap: 76px;
+}
+
 .pieChart {
     width: 120px;
     display: flex;
@@ -175,6 +180,6 @@ tr:nth-child(1) {
 .pieText {
     fill: white;
     text-anchor: middle;
-    fon-size: 1.6em;
-    fon-weight: 600;
+    font-size: 1.6em;
+    font-weight: 600;
 }
