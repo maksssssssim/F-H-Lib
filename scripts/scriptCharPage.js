@@ -26,7 +26,7 @@ function tableInit(listData){
 }
 
 function createPie(listData){
-    let maxStat = Math.max.apply(...Object.values(listData)) + 2;
+    let maxStat = Math.max.apply(Object.values(listData)) + 2;
     
     Object.entries(listData).forEach(([key, value]) => {
         let mainDiv = document.createElement('div');
