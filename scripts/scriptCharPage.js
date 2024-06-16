@@ -41,7 +41,7 @@ function createPie(listData){
         </svg>
         <p>${key}</p>`
         
-        document.getElementsByClassList('characteristics_conteiner')[0].appendChild(mainDiv);
+        document.getElementsByClassName('characteristics_conteiner')[0].appendChild(mainDiv);
     });
 }
 
