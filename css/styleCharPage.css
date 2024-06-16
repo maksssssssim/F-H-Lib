@@ -39,6 +39,7 @@ p {
 
 .main_info__info {
     height: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -121,13 +122,16 @@ p.h3_text {
 ul {
     margin: 0px 20px;
     list-style-type: disc;
+}
+
+.item ul {
     max-width: 500px;
 }
 
 ul li {
     font-size: 1.2em;
     font-weight: 600;
-    margin-bottom: 2px;
+    margin-bottom: 16px;
 }
 
 th, td {
