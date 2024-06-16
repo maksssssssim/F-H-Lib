@@ -290,7 +290,7 @@ function initApp(listName, char){
                     <p class="h2_text">Метод получения</p>
                     <p>${char.wayToHave}</p>
                 </div>
-                <div class="party_add" id='ul_4'>
+                <div class="party_add item" id='ul_4'>
                     <p class="h2_text">Эффекты и применение</p>
                 </div>
             </div>
