@@ -315,7 +315,7 @@ function checkChar(nameGame, charName){
             if(element.charType === 'Предмет'){
                 createUl(element.effects, 'ul_4');
             }else if(element.charType === 'Игровой'){
-                createUl(element.effects, 'ul_1');
+                createUl(element.equipment, 'ul_1');
                 createUl(element.commandAdd, 'ul_2');
                 createUl(element.charSkills, 'ul_5');
                 createPie(element.characteristics);
