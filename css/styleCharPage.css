@@ -152,3 +152,25 @@ tr:nth-child(1) {
     font-size: 1.2em;
     font-weight: 500;
 }
+
+.pieChart {
+    width: 120px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.pieNumber {
+    fill: none; 
+    stroke: #7D2E2B;
+    stroke-width: 20px;
+    transform: rotate(-90deg);
+}
+
+.pieText {
+    fill: white;
+    text-anchor: middle;
+    fon-size: 1.6em;
+    fon-weight: 600;
+}
