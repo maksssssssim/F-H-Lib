@@ -25,6 +25,22 @@ function tableInit(listData){
     document.getElementsByClassName('charTable')[0].appendChild(table);
 }
 
+function createPie(listData){
+    Object.entries(listData).forEach(([key, value)) => {
+        let mainDiv = document.createElement('div');
+        mainDiv.classList.add('pieChart');
+
+        mainDiv.innerHTML = 
+        `<svg viewBox="0 0 120 120">
+            <circle cx="-60" cy="60" r="50" class="pieNumber"/>
+            <text x="50%" y="60%" class="pieText">${value}</text>
+        </svg>
+        <p>${key}</p>`
+        
+        document.getElementsByClassList('characteristics_conteiner')[0].appendChild(mainDiv);
+    });
+}
+
 function createUl(listData, id){
     let ul = document.createElement('ul');
 
@@ -46,31 +62,31 @@ function initApp(listName, char){
             <div class="main_info__info">
                 <div class="main_info__info_text">
                     <p class="h2_text">${char.charName}</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, neque expedita ipsum velit natus reiciendis sit sint, quae porro eius rem veritatis ab vel molestias qui debitis. Consequuntur, ullam. Molestias.</p>
+                    <p>${char.charDesc}</p>
                     <div class="main_info__info_atributes">
                         <div class="atribut">
                             <span>
                                 <img class="icon" src="./components/gender_icon.svg" alt="gender">
                             </span>
-                            <p>Пол</p>
+                            <p>${char.charGender}</p>
                         </div>
                         <div class="atribut">
                             <span>
                                 <img class="icon" src="./components/species_icon.svg" alt="species">
                             </span>
-                            <p>Вид</p>
+                            <p>${char.charSpecies}</p>
                         </div>
                         <div class="atribut">
                             <span>
                                 <img class="icon" src="./components/location_icon.svg" alt="place">
                             </span>
-                            <p>Место рождения</p>
+                            <p>${char.birthLoc}</p>
                         </div>
                         <div class="atribut">
                             <span>
                                 <img class="icon" src="./components/soul_icon.svg" alt="soul">
                             </span>
-                            <p>Душа</p>
+                            <p>${char.charSoul}</p>
                         </div>
                     </div>
                 </div>
@@ -88,11 +104,12 @@ function initApp(listName, char){
         </div>
         <div class="char_history">
             <p class="h2_text">История персонажа</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo quaerat voluptas, reprehenderit non deserunt modi excepturi adipisci dolore ad qui, quidem repudiandae dolorem veritatis enim quam sed similique, animi veniam?</p>
+            <p>${char.charHistory}</p>
         </div>
         <div class="characteristics">
             <p class="h2_text">Характеристики</p>
             <div class="characteristics_conteiner">
+                
             </div>
         </div>
         <div class="equipment" id='ul_1'>
@@ -101,6 +118,9 @@ function initApp(listName, char){
         </div>
         <div class="party_add" id='ul_2'>
             <p class="h2_text">Вербовка</p>
+        </div>
+        <div class="party_add" id='ul_5'>
+            <p class="h2_text">Навыки</p>
         </div>`;
         aside.classList.add('play')
     }else if(listName === 'characters' & char.charType === 'Не игровой'){
@@ -283,6 +303,7 @@ function checkChar(nameGame, charName){
     }else{
         myList = cards_list;
     }
+    
     myList.forEach(element => {
         if(element.charId === charName){
             initApp(nameGame, element);
@@ -291,7 +312,9 @@ function checkChar(nameGame, charName){
                 createUl(element.effects, 'ul_4');
             }else if(element.charType === 'Игровой'){
                 createUl(element.effects, 'ul_1');
-                createUl(element.effects, 'ul_2');
+                createUl(element.commandAdd, 'ul_2');
+                createUl(element.charSkills, 'ul_5');
+                createPie(element.characterisrics);
             }
             
             if(element.charType === 'Враг'){
