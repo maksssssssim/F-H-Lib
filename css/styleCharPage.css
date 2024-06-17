@@ -173,7 +173,7 @@ tr:nth-child(1) {
 .pieBack {
     fill: none; 
     stroke: #D9D9D9;
-    stroke-width: 20px;
+    stroke-width: 19px;
     transform: rotate(-90deg);
 }
 
