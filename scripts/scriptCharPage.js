@@ -134,25 +134,25 @@ function initApp(listName, char){
             <div class="main_info__info">
                 <div class="main_info__info_text">
                     <p class="h2_text">${char.charName}</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, neque expedita ipsum velit natus reiciendis sit sint, quae porro eius rem veritatis ab vel molestias qui debitis. Consequuntur, ullam. Molestias.</p>
+                    <p>${char.charDesc}</p>
                     <div class="main_info__info_atributes">
                         <div class="atribut">
                             <span>
                                 <img class="icon" src="./components/gender_icon.svg" alt="gender">
                             </span>
-                            <p>Пол</p>
+                            <p>${char.charGender}</p>
                         </div>
                         <div class="atribut">
                             <span>
                                 <img class="icon" src="./components/species_icon.svg" alt="species">
                             </span>
-                            <p>Вид</p>
+                            <p>${char.charSpecies}</p>
                         </div>
                         <div class="atribut">
                             <span>
                                 <img class="icon" src="./components/location_icon.svg" alt="place">
                             </span>
-                            <p>Место рождения</p>
+                            <p>${char.birthLoc}</p>
                         </div>
                     </div>
                 </div>
@@ -170,18 +170,18 @@ function initApp(listName, char){
         </div>
         <div class="char_history">
             <p class="h2_text">История персонажа</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo quaerat voluptas, reprehenderit non deserunt modi excepturi adipisci dolore ad qui, quidem repudiandae dolorem veritatis enim quam sed similique, animi veniam?</p>
+            <p>${char.charHistory}</p>
         </div>
         <div class="equipment">
             <p class="h2_text">Место нахождения и поведение</p>
             <p class="h3_text">Местонахождение</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo quaerat voluptas, reprehenderit non deserunt modi excepturi adipisci dolore ad qui, quidem repudiandae dolorem veritatis enim quam sed similique, animi veniam?</p>
+            <p>${char.charPlace}</p>
             <p class="h3_text">Поведение</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo quaerat voluptas, reprehenderit non deserunt modi excepturi adipisci dolore ad qui, quidem repudiandae dolorem veritatis enim quam sed similique, animi veniam?</p>
+            <p>${char.charPatern}</p>
         </div>
         <div class="party_add">
             <p class="h2_text">Взаимодействие</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo quaerat voluptas, reprehenderit non deserunt modi excepturi adipisci dolore ad qui, quidem repudiandae dolorem veritatis enim quam sed similique, animi veniam?</p>
+            <p>${char.charAdd}?</p>
         </div>`;
         aside.classList.add('non-play')
     }else if(listName === 'characters' & char.charType === 'Враг'){
@@ -190,25 +190,25 @@ function initApp(listName, char){
             <div class="main_info__info">
                 <div class="main_info__info_text">
                     <p class="h2_text">${char.charName}</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, neque expedita ipsum velit natus reiciendis sit sint, quae porro eius rem veritatis ab vel molestias qui debitis. Consequuntur, ullam. Molestias.</p>
+                    <p>${char.charDesc}</p>
                     <div class="main_info__info_atributes">
                         <div class="atribut">
                             <span>
                                 <img class="icon" src="./components/gender_icon.svg" alt="gender">
                             </span>
-                            <p>Пол</p>
+                            <p>${char.charGender}</p>
                         </div>
                         <div class="atribut">
                             <span>
                                 <img class="icon" src="./components/species_icon.svg" alt="species">
                             </span>
-                            <p>Вид</p>
+                            <p>${char.charSpecies}</p>
                         </div>
                         <div class="atribut">
                             <span>
                                 <img class="icon" src="./components/location_icon.svg" alt="place">
                             </span>
-                            <p>Локация спавна</p>
+                            <p>${char.birthLoc}</p>
                         </div>
                     </div>
                 </div>
@@ -227,13 +227,13 @@ function initApp(listName, char){
         <div class="equipment">
             <p class="h2_text">Место нахождения и поведение</p>
             <p class="h3_text">Местонахождение</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo quaerat voluptas, reprehenderit non deserunt modi excepturi adipisci dolore ad qui, quidem repudiandae dolorem veritatis enim quam sed similique, animi veniam?</p>
+            <p>${char.birthLoc}</p>
             <p class="h3_text">Поведение</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo quaerat voluptas, reprehenderit non deserunt modi excepturi adipisci dolore ad qui, quidem repudiandae dolorem veritatis enim quam sed similique, animi veniam?</p>
+            <p>${char.charPatern}</p>
         </div>
         <div class="party_add">
             <p class="h2_text">Стратегия</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo quaerat voluptas, reprehenderit non deserunt modi excepturi adipisci dolore ad qui, quidem repudiandae dolorem veritatis enim quam sed similique, animi veniam?</p>
+            <p>${char.strategy}</p>
         </div>
         <div class="charTable">
             <p class="h2_text">Здоровье</p>
@@ -324,7 +324,7 @@ function checkChar(nameGame, charName){
             
             if(element.charType === 'Враг'){
                 tableInit(element.charHP);
-                createUl(element.effects, 'ul_3');
+                createUl(element.charSkills, 'ul_3');
             }
         }
     });
