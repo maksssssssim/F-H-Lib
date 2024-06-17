@@ -25,7 +25,7 @@ function initApp(nameGame, listName){
         }else{
             newDiv.innerHTML = `
             <a class="${listName} ${char.charId}" onclick="charPageOpen(this.classList[0], this.classList[1])">
-                <img src="${char.charImage}">
+                <div class="image_conteiner"><img src="${char.charImage}"></div>
                 <div class="hover_line"></div>
                 <div class=charText>
                     <p class="charName">${char.charName}</p>
