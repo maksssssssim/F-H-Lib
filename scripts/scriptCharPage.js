@@ -105,7 +105,7 @@ function initApp(listName, char){
                     </div>
                 </div>
             </div>
-            <img src="#" alt="char_photo">
+            <img src="${char.charImage}" alt="char_photo">
         </div>
         <div class="char_history">
             <p class="h2_text">История персонажа</p>
