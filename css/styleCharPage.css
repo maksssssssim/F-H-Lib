@@ -170,6 +170,8 @@ tr:nth-child(1) {
     gap: 16px;
 }
 
+pieChart circle:nth-child(1)
+
 .pieChart p {
     text-align: center;
 }
