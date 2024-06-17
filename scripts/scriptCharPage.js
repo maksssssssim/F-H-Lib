@@ -32,12 +32,12 @@ function createPie(listData){
         let mainDiv = document.createElement('div');
         mainDiv.classList.add('pieChart');
 
-        let dashStat = (value*360)/35;
+        // let dashStat = (value*360)/35;
 
         mainDiv.innerHTML = 
         `<svg viewBox="0 0 120 120">
-            <circle cx="-60" cy="60" r="50" stroke-dasharray="${dashStat}" class="pieNumber"/>
-            <text x="50%" y="60%" class="pieText">${value}</text>
+            <circle cx="-60" cy="60" r="50" stroke-dasharray="260" stroke="${value[1]}" class="pieNumber"/>
+            <text x="50%" y="60%" class="pieText">${value[0]}</text>
         </svg>
         <p>${key}</p>`
         
