@@ -26,14 +26,13 @@ function tableInit(listData){
 }
 
 function createPie(listData){
-    let maxStat = Math.max.apply(Math, Object.values(listData)) + 2;
+    // let maxStat = Math.max.apply(Math, Object.values(listData)) + 2;
     
     Object.entries(listData).forEach(([key, value]) => {
         let mainDiv = document.createElement('div');
         mainDiv.classList.add('pieChart');
 
-        let dashStat = (value*360)/maxStat;
-        console.log(dashStat);
+        let dashStat = (value*360)/40;
 
         mainDiv.innerHTML = 
         `<svg viewBox="0 0 120 120">
