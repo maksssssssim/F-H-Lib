@@ -32,7 +32,7 @@ function createPie(listData){
         let mainDiv = document.createElement('div');
         mainDiv.classList.add('pieChart');
 
-        let dashStat = (value*360)/40;
+        let dashStat = (value*360)/35;
 
         mainDiv.innerHTML = 
         `<svg viewBox="0 0 120 120">
