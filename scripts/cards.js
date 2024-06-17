@@ -2,7 +2,7 @@ list_path = './components/'
 
 const cards_list = [
     {
-        charImage: list_path + 'characters/Albedo_Icon.PNG',
+        charImage: list_path + 'Kahara.webp',
         charId: 'Kahara',
         charName: 'Кахара', //имя
         charType: 'Игровой', //тип
@@ -19,7 +19,7 @@ const cards_list = [
     },
     {
         
-        charImage: list_path + 'characters/Albedo_Icon.PNG',
+        charImage: list_path + "D'Arc.webp",
         charId: 'dArce',
         charName: "Д'Арс", //имя
         charType: 'Игровой', //тип
