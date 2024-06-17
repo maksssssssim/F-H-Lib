@@ -183,7 +183,6 @@ tr:nth-child(1) {
 
 .pieNumber {
     fill: none; 
-    stroke: #7D2E2B;
     stroke-width: 20px;
     transform: rotate(-90deg);
 }
