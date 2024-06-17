@@ -172,12 +172,11 @@ function initApp(listName, char){
             <p class="h2_text">История персонажа</p>
             <p>${char.charHistory}</p>
         </div>
-        <div class="equipment">
+        <div class="equipment" id='ul_8'>
             <p class="h2_text">Место нахождения и поведение</p>
             <p class="h3_text">Местонахождение</p>
             <p>${char.charPlace}</p>
             <p class="h3_text">Поведение</p>
-            <p>${char.charPatern}</p>
         </div>
         <div class="party_add">
             <p class="h2_text">Взаимодействие</p>
@@ -224,14 +223,13 @@ function initApp(listName, char){
             </div>
             <div class="img_conteiner"><img src="${char.charImage}" alt="char_photo"></div>
         </div>
-        <div class="equipment">
+        <div class="equipment" id='ul_6'>
             <p class="h2_text">Место нахождения и поведение</p>
             <p class="h3_text">Местонахождение</p>
             <p>${char.birthLoc}</p>
             <p class="h3_text">Поведение</p>
-            <p>${char.charPatern}</p>
         </div>
-        <div class="party_add">
+        <div class="party_add" id='ul_7'>
             <p class="h2_text">Стратегия</p>
             <p>${char.strategy}</p>
         </div>
@@ -320,11 +318,13 @@ function checkChar(nameGame, charName){
                 createUl(element.comandAdd, 'ul_2');
                 createUl(element.charSkills, 'ul_5');
                 createPie(element.characteristics);
-            }
-            
-            if(element.charType === 'Враг'){
+            }else if(element.charType === 'Враг'){
                 tableInit(element.charHP);
                 createUl(element.charSkills, 'ul_3');
+                createUl(element.charPatern, 'ul_6');
+                createUl(element.strategy, 'ul_7');
+            }else if(element.charType === 'Не игровой'){
+                createUl(element.charPatern, 'ul_8');
             }
         }
     });
