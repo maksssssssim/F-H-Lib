@@ -105,7 +105,7 @@ function initApp(listName, char){
                     </div>
                 </div>
             </div>
-            <img src="${char.charImage}" alt="char_photo">
+            <div class="img_conteiner"><img src="${char.charImage}" alt="char_photo"></div>
         </div>
         <div class="char_history">
             <p class="h2_text">История персонажа</p>
@@ -166,7 +166,7 @@ function initApp(listName, char){
                     </div>
                 </div>
             </div>
-            <img src="#" alt="char_photo">
+            <div class="img_conteiner"><img src="${char.charImage}" alt="char_photo"></div>
         </div>
         <div class="char_history">
             <p class="h2_text">История персонажа</p>
@@ -222,7 +222,7 @@ function initApp(listName, char){
                     </div>
                 </div>
             </div>
-            <img src="#" alt="char_photo">
+            <div class="img_conteiner"><img src="${char.charImage}" alt="char_photo"></div>
         </div>
         <div class="equipment">
             <p class="h2_text">Место нахождения и поведение</p>
